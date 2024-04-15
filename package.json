@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "@types/react-icons": "^3.0.0",
     "function-plot": "^1.24.4",
     "mathjs": "^12.4.1",
     "react": "^18.2.0",

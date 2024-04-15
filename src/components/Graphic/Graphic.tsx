@@ -2,6 +2,9 @@ import functionPlot from "function-plot"
 import { compile } from "mathjs"
 import { useContext, useEffect } from "react"
 import ExpressionContext from "../../context/ExpressionContext"
+import { BsGraphDown } from "react-icons/bs";
+
+
 type Props = {
     expression: any,
 }
@@ -56,9 +59,9 @@ export default function Graphic ({expression}: Props){
 
     return (
         <>
-            <h2>Grafica </h2>
-            <h2>Derivada: {expression.derivative}</h2>
-            <h2>evaluado con 5 es igual a {evaluateFunction(5)}</h2>
+            <h2 style={{fontSize:"30pt"}}>Grafica <BsGraphDown/></h2>
+            <h2 style={{fontSize:"25pt"}}>Derivada: {expression.derivative}</h2>
+            <h2 style={{fontSize:"25pt"}}>Evaluado con 5 es igual a {evaluateFunction(5)}</h2>
             <figure id="graphic">
 
             </figure>
